@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+		<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<!--free 3d model source-->
+				<a-asset-item id="scene4_gltf" src="https://raw.githubusercontent.com/Gundam5698/RepoProof/main/whulvk-werewolf-lycan-blockbench/source/model.gltf"  ></a-asset-item>
+
+				<!-- free mp3 source -->
+				<audio
+					id="sonar"
+					src="https://cdn.glitch.global/52e07dc4-48b4-4dfb-8b8f-c3ca7382ceda/swoosh-sound-effect-for-fight-scenes-or-transitions-2-149890.mp3"
+				></audio> 
+	    
+			</a-assets> 
+			
+ 			<!--3d model properties (animation, position, rotation, scale, audio event) -->	
+			<a-gltf-model animation-mixer="clip: idle" position="2 2 2" rotation="0 180 0" scale="4 4 4" src="#scene4_gltf"  sound="src:#sonar; on: click; volume: 0.5; poolSize: 10"   ></a-gltf-model>
+			
+			<!-- camera position + cursor -->
+			<a-camera position="1 7 20" user-height="1.6"> <a-cursor></a-cursor></a-camera>
+	 
+		</a-scene>
+
+	</body>
+</html>
+
+<!-- The Whulvk Werewolf Lycan - Blockbench was created by DrageonDb : https://sketchfab.com/3d-models/whulvk-werewolf-lycan-blockbench-043c1c55d5c046749bee1c9173ad61ef with License CC Attribution: https://creativecommons.org/licenses/by/4.0/ .
+    The sound effect (swoosh-sound-effect-for-fight-scenes-or-transitions-2-149890.mp3) was created by  Dheeraj M4JOR : https://pixabay.com/users/dheerajakam4jor-36410348/ from PIXABAY : https://pixabay.com/ -->
